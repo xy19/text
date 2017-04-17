@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="css/common.css" rel="stylesheet" />
+    <link href="css/base.css" rel="stylesheet" />
+    <link href="css/index.css" rel="stylesheet" />
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/vue2.2.0.js"></script>
+    <script src="js/move.js"></script>
+    <style>
+        [v-cloak]{
+            display:none;
+        }
+    </style>
+</head>
+<body>
+    <header class="head">
+        <ul class="h1 clearfix">
+            <li class="fl h3">
+                <b class="fl"></b>
+                <a href="javascript:;" class="fl">最新团购&nbsp&nbsp|</a>
+            </li>
+            <li class="fl">
+                <b class="fl h4"></b>
+                <a href="javascript:;" class="fl">微电影&nbsp&nbsp|</a>
+            </li>
+            <li class="fl">
+                <b class="fl h5"></b>
+                <a href="javascript:;" class="fl">电子杂志&nbsp&nbsp|</a>
+            </li>
+            <li class="fl">
+                <b class="fl h6"></b>
+                <a href="javascript:;" class="fl">联系我们&nbsp&nbsp|</a>
+            </li>
+        </ul>
+        <ul class="h2 clearfix inner">
+            <li class="fl">
+               <h1>
+                   <a href="javascript:;">慕色</a>
+               </h1>
+           </li>
+            <li class="fl h7">
+                <div class="fl re hh7">
+                    <a href="javascript:;" class="ab a1">网站首页</a>
+                    <p class="ab a2">HOME</p>
+                </div>
+                <b class="fl"></b>
+            </li>
+            <li class="fl h7">
+                <div class="fl re hh7">
+                    <a href="javascript:;" class="ab a1">作品展示</a>
+                    <p class="h8 ab a2">SHOWCASE</p>
+                </div>
+                <b class="fl"></b>
+            </li>
+            <li class="fl h7">
+                <div class="fl re hh7">
+                    <a href="javascript:;" class="ab a1">优惠活动</a>
+                    <p class="ab a2">NEWS</p>
+                </div>
+                <b class="fl"></b>
+            </li>
+            <li class="fl h7">
+                <div class="fl re hh7">
+                    <a href="javascript:;" class="ab a1">关于慕色</a>
+                    <p class="h9 ab a2">ABOUT US</p>
+                </div>
+                <b class="fl"></b>
+            </li>
+            <li class="fl h7">
+                <div class="fl re hh7">
+                    <a href="javascript:;" class="ab a1">客户点评</a>
+                    <p class="h10 ab a2">COMMENTS</p>
+                </div>
+                <b class="fl"></b>
+            </li>
+            <li class="fl h7">
+                <div class="fl re hh7">
+                    <a href="javascript:;" class="ab a1">在线预约</a>
+                    <p class="h11 ab a2">M-CULUB</p>
+                </div>
+                <b class="fl"></b>
+            </li>
+        </ul>
+    </header>
+    <div class="h10"></div>
+    <!-- 头 -->
+    <div class="sec1 re">
+        <div style="position:relative;" class="secc">
+            <img class="hide-1" src="images/q1.jpg" alt="" style="display:block;"/>
+            <img class="hide-1" src="images/q2.jpg" alt="" />
+            <img class="hide-1" src="images/q3.jpg" alt="" />
+            <p class="left-1"></p>
+            <p class="right-1"></p>
+        </div>
+        <p class="ab sec2"></p>
+        <div class="sec3 ab inner clearfix">
+            <div class="fl sec4">
+                <img src="images/q7.png" alt="" />
+                <div>
+                    <div class="sec5 clearfix">
+                        <b class="fl"></b>
+                        <a href="javascript:;" class="fl">预约进店</a>
+                        <input type="text" name="" class="sec6 fl" value="手机号" id="sec6"/>
+                        <input type="button" name="" value="提交 " class="sec7 fl" id="sec7"/>
+                    </div>
+                    <ul class="sec8 clearfix">
+                        <li class="fl ab">
+                            <i class="ab"></i>
+                            <a href="javascript:;" class="ab">进店礼</a>
+                        </li>
+                        <li class="fl ab sec9">
+                            <i class="ab"></i>
+                            <a href="javascript:;" class="ab">选单礼</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="fl se1">
+                <div class="clearfix">
+                    <img src="images/q8.png" alt="" class="fl"/>
+                    <div class="fl se2">
+                        <div class="clearfix se6">
+                            <img src="images/q12.png" alt="" class="se3 fl"/>
+                            <img src="images/q13.png" alt="" class="se4 fl"/>
+                        </div>
+                        <img src="images/q18.png" alt="" class="se5"/>
+                    </div>
+                </div>
+                <ul class="clearfix">
+                    <li class="fl">
+                        <img src="images/q14.png" alt=""/>
+                    </li>
+                    <li class="fl">
+                        <img src="images/q15.png" alt="" class="se7"/>
+                    </li>
+                    <li class="fl">
+                        <img src="images/q16.png" alt=""/>
+                    </li>
+                </ul>
+                <div class="se7 clearfix">
+                    <div class="se8 fl">
+                        <img src="images/q17.png" alt="" class="se9" />
+                        <p>15802199862</p>
+                    </div>
+                    <div class="se8 fl se10">
+                        <img src="images/q19.png" alt="" class="se9" />
+                        <p>am 09:00-pm22:00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 轮播图 -->
+    <section class="inner" id="box" v-cloak>
+        <div class="con1">
+            <div class="co1 clearfix">
+                <div class="fl">
+                    <img src="images/q2.gif" alt="" class="co2"/>
+                    <p class="co3">FASION PHOTOGRAPHY AGENCY</p>
+                </div>
+                <a href="javascript:;" class="fr co4"></a>
+            </div>
+            <div class="co5 clearfix">
+                <div class="co6 re fl">
+                    <img src="images/qc1.jpg" alt="" />
+                    <ul class="ab clearfix co7">
+                        <li class="fl co8 on">1</li>
+                        <li class="fl co8">2</li>
+                        <li class="fl co8">3</li>
+                    </ul>
+                    <p class="co9">《网络专属团购》网络支付再减300，仅限官网</p>
+                    <div class="clearfix">
+                        <img src="images/qq.png" alt="" class="fl co10"/>
+                        <ul class="fl co11">
+                            <li>
+                                <b>原价 ：</b>
+                                <i>¥23999</i>
+                            </li>
+                            <li>
+                                <b>节省 ：</b>
+                                <strong>¥18000</strong>
+                            </li>
+                            <li>
+                                <b>折扣 ：</b>
+                                <strong>2.5</strong>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="co12 clearfix">
+                        <p class="co13 fl">活动日期 : 2017.03.20-03.31</p>
+                        <span class="co14 fl">854</span>
+                        <b class="co15 fl">人已预约</b>
+                    </div>
+                    <div class="coo re" id="coo" @mouseenter="mover">
+                        <ul class="co16 ab">
+                            <li class="co17 clearfix" v-for="(v,i) in arr7">
+                                <p class="co18 fl">{{arr7[i]}}</p>
+                                <p class="co18 fl">{{arr8[i]}}</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="fl">
+                    <ul class="co19 clearfix" id="co19">
+                        <li class="co20">
+                            <img src="images/qc2.gif" alt="" />
+                            <p class="show">MOSE STUDIO</p>
+                        </li>
+                        <li class="co20">
+                            <img src="images/qc3.jpg" alt="" />
+                            <p class="show">MOSE STUDIO</p>
+                        </li>
+                        <li class="co20">
+                            <img src="images/qc4.jpg" alt="" />
+                            <p class="show">MOSE STUDIO</p>
+                        </li>
+                        <li class="co20">
+                            <img src="images/qc5.jpg" alt="" />
+                            <p class="show">MOSE STUDIO</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="co21">
+                <img src="images/qc.jpg" alt="" class="co22"/>
+            </div>
+        </div>
+        <!--  最新活动 -->
+        <div class="con1 con2">
+            <div class="co1 clearfix">
+                <div class="fl">
+                    <img src="images/q3.gif" alt="" class="co2"/>
+                    <p class="co3">FASION PHOTOGRAPHY AGENCY</p>
+                </div>
+                <a href="javascript:;" class="fr co4"></a>
+            </div>
+            <ul class="c1 clearfix">
+                <li class="c2 fl re " v-for="(v,i) in arr2"
+                    @mouseenter="change(i)" @mouseleave="remove(i)">
+                    <img :src="arr1[i]" alt="" class="c3"/>
+                    <p class="p">{{arr2[i]}}</p>
+                    <div class="hide"></div>
+                    <div class="active">
+                        <p class="p1">MUSE STUDIO</p>
+                        <p class="p2">幕色摄影</p>
+                    </div>
+                </li>
+            </ul>
+            <div class="co21">
+                <img src="images/qc2.jpg" alt="" class="co22"/>
+            </div>
+        </div>
+        <!--  最新作品  -->
+        <div class="con1 con3">
+            <div class="co1 clearfix">
+                <div class="fl">
+                    <img src="images/q1.gif" alt="" class="co2"/>
+                    <p class="co3">FASION PHOTOGRAPHY AGENCY</p>
+                </div>
+                <a href="javascript:;" class="fr co4"></a>
+            </div>
+            <div class="c4 re">
+                <img src="images/qcon.jpg" alt=""/>
+                <i class="ab"></i>
+            </div>
+            <div class="c5 re">
+                <ul class="c7 clearfix">
+                    <li class="c8 fl">
+                        <img src="images/qcon1.jpg" alt="" />
+                    </li>
+                    <li class="c8 fl">
+                        <img src="images/qcon2.jpg" alt="" />
+                    </li>
+                    <li class="c8 fl">
+                        <img src="images/qcon3.jpg" alt="" />
+                    </li>
+                    <li class="c8 fl">
+                        <img src="images/qcon4.jpg" alt="" />
+                    </li>
+                    <li class="c8 fl">
+                        <img src="images/qcon5.jpg" alt="" />
+                    </li>
+                </ul>
+                <ul class="c6 ab clearfix">
+                    <li class="c6c fl"></li>
+                    <li class="c6c fl"></li>
+                    <li class="c6c fl"></li>
+                    <li class="c6c fl"></li>
+                    <li class="c6c c6cc fl"></li>
+                </ul>
+            </div>
+        </div>
+        <!--  特色场景  -->
+        <div class="con1 con4">
+            <div class="co1 clearfix">
+                <div class="fl">
+                    <img src="images/q4.gif" alt="" class="co2"/>
+                    <p class="co3">FASION PHOTOGRAPHY AGENCY</p>
+                </div>
+                <a href="javascript:;" class="fr co4"></a>
+            </div>
+            <ul class="cc1 clearfix">
+                <li class="cc2 re fl">
+                    <p class="cc4"><p/>
+                    <img src="images/qqc1.jpg" alt="" class="cc3 ab"/>
+                    <p class="c1c">金元值</p>
+                    <p class="c1c">韩国总监摄影师</p>
+                </li>
+                <li class="cc2 re fl">
+                    <p class="cc4"><p/>
+                    <img src="images/qqc2.jpg" alt="" class="cc3 ab"/>
+                    <p class="c1c">RAN</p>
+                    <p class="c1c">韩国总监化妆师</p>
+                </li>
+                <li class="cc2 re fl">
+                    <p class="cc4"><p/>
+                    <img src="images/qqc3.jpg" alt="" class="cc3 ab"/>
+                    <p class="c1c">洪珠嶸</p>
+                    <p class="c1c">韩国社长级摄影师</p>
+                </li>
+                <li class="cc2 re fl">
+                    <p class="cc4"><p/>
+                    <img src="images/qqc4.jpg" alt="" class="cc3 ab"/>
+                    <p class="c1c">爱善</p>
+                    <p class="c1c">韩国总监化妆师</p>
+                </li>
+            </ul>
+        </div>
+        <!--  服务团队  -->
+        <div class="con5 clearfix">
+            <div class="cnn1 fl">
+                <div class="cnn2 clearfix">
+                    <div class="fl cnn6">
+                        <img src="images/q5.gif" alt="" class="cnn4"/>
+                        <img src="images/q20.png" alt="" class="cnn3"/>
+                    </div>
+                    <a href="javascript:;" class="fr cnn5"></a>
+                </div>
+                <div class="cnn7 clearfix">
+                    <div class="cnn8 fl">
+                        <img src="images/qcnn1.jpg" alt="" class="cnn9"/>
+                    </div>
+                    <div class="cnn11 fl">
+                        <p class="cnn10">POST TIME:2017/03/25</p>
+                        <h3>拒绝僵尸表情 拍出迷人上海婚纱照！</h3>
+                        <p class="cnn12">进人筹婚热季，可毫无头绪的你，还在为到底选哪家上海婚纱
+                            摄影拍婚照犯难。只选套餐、看样片、挑礼服？不！当然</p>
+                    </div>
+                </div>
+                <ul class="cnn13">
+                    <li class="cnn14 clearfix" v-for="(v,i) in arr3">
+                        <p class="fl">{{arr3[i]}}</p>
+                        <p class="fr">{{arr4[i]}}</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="cnn1 fr">
+                <div class="cnn2 clearfix">
+                    <div class="fl cnn6">
+                        <img src="images/q6.gif" alt="" class="cnn4"/>
+                        <img src="images/q20.png" alt="" class="cnn3"/>
+                    </div>
+                    <a href="javascript:;" class="fr cnn5"></a>
+                </div>
+                <div class="cnn7 clearfix">
+                    <div class="cnn8 fl">
+                        <img src="images/qcnn1.jpg" alt="" class="cnn9"/>
+                    </div>
+                    <div class="cnn11 fl">
+                        <p class="cnn10">POST TIME:2017/03/25</p>
+                        <h3>上海婚纱摄影 作为一个女生必须知道的事</h3>
+                        <p class="cnn12">作为一个女生你必须知道的事.
+                            世界上只有两种女生:会拍照的女生和不会拍照的女生。
+                            就像世界上没有丑女人只有懒女人一样，不要总觉得自己不会，
+                            没事你就多多练习嘛，最后自然就水到渠</p>
+                    </div>
+                </div>
+                <ul class="cnn13">
+                    <li class="cnn14 clearfix" v-for="(v,i) in arr5">
+                        <p class="fl">{{arr5[i]}}</p>
+                        <p class="fr">{{arr6[i]}}</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <script>
+        new Vue({
+            el:'#box',
+            data:{
+                arr1:['images/qco1.jpg','images/qco2.jpg','images/qco3.jpg','images/qco4.jpg',
+                    'images/qco5.jpg','images/qco6.jpg','images/qco7.jpg','images/qco8.jpg'],
+                arr2:['全新《muse 秘密花园》','2017年公主日记','全新《童话》系列','《蕾奥娜》系列',
+                '全新《唯爱III》系列','全新《敢爱》系列','《倾城复古》系列','《爱慕III》系列'],
+                arr3:['拍婚纱照注意事项之新郎篇',
+                    '上海婚纱摄影 拍婚纱摄影的四大误区',
+                '上海婚纱照 服装搭配小技巧才能拍出好看的婚纱照',
+                '怎样拍上海婚纱照才最适合自己',
+                '上海婚纱摄影 选婚纱的技巧',
+                '上海婚纱摄影 胖新娘拍照技巧',
+                '上海婚纱摄影  新娘发型做个美美的公主',
+                '秋冬季节拍婚纱照需要哪些措施？',
+                '上海婚纱照 拍照显瘦终极小窍门',
+                '最新上海婚纱照欣赏 把控唯美时尚的脉搏'],
+                arr4:['2017/03/25',
+                    '2017/03/25',
+                '2017/03/25',
+                '2017/03/25',
+                '2017/03/25',
+                '2017/03/25',
+                '2016/12/22',
+                '2016/12/07',
+                '2016/12/07',
+                '2016/12/07',
+                '2016/12/07'],
+                arr5:['婚纱照拍摄过程中的注意事项',
+                    '上海婚纱照 摆放禁忌',
+                    '上海婚纱摄影哪里拍的好',
+                    '上海婚纱照 怎样拍婚纱照更有质感',
+                    '上海婚纱照 解析韩式婚纱照特点',
+                    '上海婚纱照 教你做完美冬季恋人',
+                    '90后 上海婚纱摄影 ',
+                    '上海婚纱摄影 拍婚照也要合理安排？',
+                    '上海婚纱照 淡淡的清新自然',
+                    '上海婚纱照外景姿势 四大技巧教你拍出美照'],
+                arr6:['2017/03/25',
+                    '2017/03/25',
+                    '2017/03/25',
+                    '2017/03/25',
+                    '2017/03/25',
+                    '2017/03/08',
+                    '2017/02/21',
+                    '2016/12/07',
+                    '2016/12/07',
+                    '2016/12/07',
+                    '2016/12/07'],
+                arr7:['叶小姐 157****6815 预约成功',
+                '李先生 135****3452 预约成功',
+                '周小姐 155****6815 预约成功',
+                '张小姐 157****2520 预约成功',
+                 '兆先生 134****3625 预约成功',
+                '章小姐 155****6355 预约成功',
+                '周小姐 155****6815 预约成功',
+                '昊先生 177****2359 预约成功',
+                '张先生 188****6815 预约成功',
+                '孙小姐 137****5025 预约成功',
+                '钱先生 153****2851 预约成功'],
+                arr8:['孙先生 177****2359 预约成功',
+                '张先生 188****6815 预约成功',
+                '孙小姐 137****5025 预约成功',
+                 '昊先生 177****2359 预约成功',
+                '赵先生 138****6815 预约成功',
+                '孙小姐 137****5025 预约成功',
+                '张小姐 157****2520 预约成功',
+                '李先生 135****3452 预约成功',
+                '昊先生 177****2359 预约成功',
+                 '周小姐 155****6815 预约成功',
+                 '孙先生 157****2520 预约成功']
+            },
+            methods:{
+                change:function(i){
+                    var aP=$('.p');
+                    var oN=$('.active');
+                    aP.eq(i).css('color','#000');
+                    oN.eq(i).show().animate({'top':0},500);
+                },
+                remove:function(i){
+                    var aP=$('.p');
+                    var oN=$('.active');
+                    aP.eq(i).css('color','#bdbdbd');
+                    oN.eq(i).show().animate({'top':400},500);
+                },
+                mover:function(){
+                    var timer=null;
+                    function play(){
+                        var oUl=$('.co16');
+                        clearInterval(timer);
+                        oUl.stop().animate({'top':-174},{'duration':8000,'complete':function(){
+                            oUl.css({'top':0,'left':0});//递归
+                            play();
+                        }});
+                    };
+                    timer=setInterval(play(),1000);
+                }
+            }
+        })
+    </script>
+</body>
+</html>

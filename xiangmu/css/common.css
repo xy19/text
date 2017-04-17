@@ -1,0 +1,27 @@
+.fl{
+    float:left;
+}
+.fr{
+    float:right;
+}
+.clearfix:after{
+    display:block;
+    content:"";
+    clear:both;
+}
+.clearfix{
+    zoom:1;
+}
+.ab{
+    position:absolute;
+}
+.re{
+    position:relative;
+}
+.fix{
+    position: fixed;
+}
+.inner{
+    width:1002px;
+    margin:0 auto;
+}
